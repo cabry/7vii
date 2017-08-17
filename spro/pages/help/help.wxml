@@ -1,0 +1,22 @@
+<view class="help-title help-basic-title">基本使用</view>
+<view class="help-basic">
+  <block wx:for="{{helpData}}" wx:key="">
+    <view class="help-basic-list" id="{{item.id}}" bindtap="detailHelp">
+      {{item.equipmentName}}
+    </view>
+  </block>
+</view>
+
+
+<view class="help-title help-basic-title">器材使用</view>
+
+<block wx:for="{{eqData}}" wx:key="">
+  <view bindtap="detail" class="help-eq" id="{{item.id}}">
+    <image src="{{item.pic}}" class="help-eq-cover"></image>
+    <view class="help-eq-rt">
+      <view class="help-eq-title">{{item.equipmentName}}</view>
+      <view class="help-eq-content">{{item.intro}}</view>
+    </view>
+
+  </view>
+</block>

@@ -1,0 +1,33 @@
+<view class="result-bg">
+  <text class="result-title">{{resultInfo.storeName}}</text>
+  <view class="result-info-bg">
+    <text class="result-info">健身时间：{{resultInfo.time}}</text>
+    <text class="result-info">健身时长：{{resultInfo.buildTime}}分钟</text>
+  </view>
+
+  <text class="result-together-title">同行小伙伴</text>
+  <view class="people-box">
+    <block wx:for="{{userInfo2}}" wx:key="">
+      <view class="people-info">
+        <image src="{{item.userIcon}}" class="people-avator"></image>
+        <view class="people-name">{{item.userName}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="people-box">
+    <block wx:for="{{userInfo1}}" wx:key="">
+      <view class="people-info">
+        <image src="{{item.userIcon}}" class="people-avator"></image>
+        <view class="people-name">{{item.userName}}</view>
+      </view>
+    </block>
+  </view>
+
+
+  <view class="result-null">{{resultInfo.words}}</view>
+
+</view>
+
+
+<button class="btn" wx:if="{{state==1}}" type="primary" bindtap="back">回到首页</button>

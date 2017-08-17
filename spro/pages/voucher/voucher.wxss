@@ -1,0 +1,134 @@
+.voucher-bar {
+  background-color: #42bd55;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+}
+
+.voucher-banner {
+  display: block;
+  width: 750rpx;
+  height: 208rpx;
+}
+
+.voucher-card{
+  background-color: white;
+  margin: 25rpx;
+  padding: 25rpx;
+  width: 650rpx;
+  border-radius: 5rpx;
+  display: -webkit-box;
+}
+
+.voucher-num{
+  font-size: 48rpx;
+  color: #D0021B;
+  line-height: 120rpx;
+  margin-right: 32rpx;
+  border-right-width: 2rpx;
+  border-right-style: dashed;
+  border-right-color: #CCC;
+  padding-right: 25rpx;
+  min-width: 120rpx;
+}
+
+.voucher-pic{
+  -webkit-box-flex: 2;
+  -moz-box-orient: 2;
+}
+
+.voucher-title{
+  font-size: 32rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 440rpx;
+  margin-bottom: 15rpx;
+}
+
+.voucher-info{
+  font-size: 28rpx;
+  color: #777;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 440rpx;
+  margin-bottom: 15rpx;
+}
+
+.voucher-time{
+  font-size: 28rpx;
+  color: #777;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 440rpx;
+}
+
+.voucher-words{
+  width: 440rpx;
+}
+.voucher-used{
+  color: #9B9B9B;
+}
+
+.voucher-expire{
+  color: #9B9B9B;
+}
+
+.voucher-unuse{
+  font-size: 28rpx;
+}
+
+
+.voucher-empty-img{
+  width: 318rpx;
+  height: 338rpx;
+  margin-top: 160rpx;
+}
+
+.voucher-empty-txt{
+  text-align: center;
+  margin-top: 65rpx;
+  font-size: 28prx;
+  color: #9B9B9B;
+}
+
+.empty{
+  text-align: center;
+  font-size: 28prx;
+}
+
+.voucher-main{
+  margin-bottom: 145rpx;
+}
+
+.swiper-tab{  
+    width: 100%;    
+    text-align: center;  
+    line-height: 80rpx;
+    background-color: white;
+    }  
+
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #9B9B9B;  
+}  
+.on{ color: #42BC55;  
+    border-bottom: 5rpx solid #42BC55;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+
+
+
+
+

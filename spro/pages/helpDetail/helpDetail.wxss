@@ -1,0 +1,25 @@
+/* helpDetail.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+
+page{
+    background-color:white;
+}
+
+.template {
+  font-size: 32rpx;
+  line-height: 1.6;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+
+.helpDetail-top {
+  margin: 25rpx;
+  font-size: 28rpx;
+  color: #42bd55;
+  text-align: center;
+}
+
+.movie{
+  text-align: center;
+}

@@ -1,0 +1,73 @@
+.store-cover{
+  width: 750rpx;
+  height: 333rpx;
+  border-radius: 0px;
+}
+
+.store-card{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  margin-top: 22rpx;
+  margin-bottom: 22rpx;
+  background-color: white;
+  word-break:break-all;
+  width: 750rpx;
+}
+
+.store-ic{
+  margin-right: 24rpx;
+  margin-left: 25rpx;
+}
+
+.ic-gym{
+  width: 32rpx;
+  height: 26rpx;
+}
+
+.ic-place{
+    width: 33rpx;
+  height: 28rpx;
+}
+
+.ic-attention{
+    width: 33rpx;
+  height: 33rpx;
+}
+
+.store-title{
+  font-size: 28rpx;
+  color: #9B9B9B;
+  margin-right: 25rpx;
+}
+
+.store-info{
+  font-size: 30rpx;
+  color: #333333;
+  margin-right: 25rpx;
+  margin-left: 25rpx;
+  line-height: 1.6;
+}
+
+.store-firstline{
+  margin-bottom: 15px;
+}
+
+.order-bar{
+  background-color: #42BD55;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+}
+
+
+.template{
+  font-size: 32rpx;
+  line-height: 1.8;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}

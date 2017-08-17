@@ -1,0 +1,94 @@
+/**index.wxss**/  
+.swiper-tab{  
+    width: 100%;    
+    text-align: center;  
+    line-height: 80rpx;
+    background-color: white;
+    }  
+
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #9B9B9B;  
+}  
+.on{ color: #42BC55;  
+    border-bottom: 5rpx solid #42BC55;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+
+
+.train-card{
+  width: 660rpx;
+  margin: 20rpx;
+  padding: 25rpx;
+  background-color: white;
+  border: 1rpx solid #D8D8D8;
+  border-radius: 5px;
+  float: left;
+}
+
+.train-cover{
+  width: 220rpx;
+  height: 150rpx;
+  float: left;
+}
+
+.train-title{
+  font-size: 32rpx;
+  float: left;
+  margin-left: 25rpx;
+  width: 400rpx;
+}
+
+.train-time{
+  font-size: 24rpx;
+  color: #42BC55;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  width: 400rpx;
+}
+
+.train-title2{
+  font-size: 32rpx;
+  float: left;
+  margin-left: 25rpx;
+  color: #9B9B9B;
+  width: 400rpx;
+}
+
+.train-time2{
+  font-size: 24rpx;
+  color: #9B9B9B;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  width: 400rpx;
+}
+
+.train-over{
+  color: #42BC55;
+  float: left;
+  font-size: 24rpx;
+  margin-top: 45rpx;
+  margin-left: 25rpx;
+  width: 400rpx;
+}
+
+.train-empty-img{
+  width: 400rpx;
+  height: 307rpx;
+  margin-top: 160rpx;
+}
+
+.train-empty-txt{
+  text-align: center;
+  margin-top: 65rpx;
+  font-size: 28prx;
+  color: #D8D8D8;
+}
+
+.empty{
+  text-align: center;
+  font-size: 28prx;
+}

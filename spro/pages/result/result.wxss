@@ -1,0 +1,87 @@
+.result-bg {
+  width: 700rpx;
+  text-align: center;
+  background-color: white;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+  padding-top: 35rpx;
+  padding-bottom: 45rpx;
+  min-height: 600rpx;
+}
+
+.result-title {
+  font-size: 32rpx;
+  color: #42bd55;
+  text-align: center;
+}
+
+.result-info-bg {
+  width: 700rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  color: white;
+  background-color: #42bd55;
+  font-size: 32rpx;
+  margin-top: 35rpx;
+  height: 100rpx;
+  margin-bottom: 45rpx;
+}
+
+.result-info {
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+}
+
+.result-together-title {
+  color: #42bd55;
+  font-size: 28rpx;
+  margin-bottom: 25rpx;
+}
+
+.people-box {
+  box-sizing: border-box;
+  display: -webkit-box;
+  width: 100%;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  text-align: center;
+}
+
+.people-info {
+  margin-top: 35rpx;
+  float: none;
+  -webkit-box-flex: 1;
+  width: 0;
+  box-sizing: border-box;
+  padding: 35rpx;
+  text-align: center;
+  line-height: 48rpx;
+}
+
+.people-avator {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 25rpx;
+}
+
+.people-name {
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 120rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  
+}
+
+.result-null {
+  text-align: center;
+  margin-top: 45rpx;
+  font-size: 32rpx;
+}

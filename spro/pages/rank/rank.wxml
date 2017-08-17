@@ -1,0 +1,30 @@
+<view class="rank-card">
+  <view class="rank-title">
+    <image src="src"></image>
+    <text>Vii排行榜</text>
+  </view>
+
+  <view class="rank-me">
+    <text class="rank-rank"></text>
+    <text class="rank-avator"></text>
+    <text class="rank-name"></text>
+    <view class="rank-data">
+      <image src="src"></image>
+      <text class="rank-data-num"></text>
+    </view>
+  </view>
+
+  <block wx:for="{{rankData}}" wx:key="">
+    <view class="rank-all">
+      <text class="rank-rank">{{item.rank}}</text>
+      <image src="{{item.userIcon}}" class="rank-avator"></image>
+      <text class="rank-name">{{item.userName}}</text>
+      <view class="rank-data">
+        <image src="src"></image>
+        <text class="rank-data-num">{{item.totalTime}}</text>
+      </view>
+    </view>
+  </block>
+
+</view>
+

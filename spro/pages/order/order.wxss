@@ -1,0 +1,48 @@
+.order-bar{
+  background-color: #42BD55;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+}
+
+
+.order-card{
+  background-color: white;
+  margin-top: 25rpx;
+  width: 100%;
+}
+
+.order-list{
+  background-color: white;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  width: 100%;
+  border: 1px solid #F5F5F5;
+}
+
+.order-title{
+  font-size: 32rpx;
+  color: #9B9B9B;
+  margin-left: 25rpx;
+}
+
+.order-value{
+  font-size: 32rpx;
+  float: right;
+  margin-right: 25rpx;
+}
+
+.order-voucher-used{
+  color: orangered
+}
+
+.order-attention{
+  font-size: 28rpx;
+  margin: 25rpx;
+  color: #9B9B9B;
+}

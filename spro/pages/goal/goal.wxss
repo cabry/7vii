@@ -1,0 +1,110 @@
+/* goal.wxss */
+page{
+  background-image: linear-gradient(-1deg, #b4ed50 0%, #42bd55 100%);
+}
+
+
+.goal-bg {
+  width: 100%;
+  height: 100%;
+  padding-top: 125rpx;
+}
+
+.goal-card {
+  width: 420rpx;
+  height: 725rpx;
+  background-image: linear-gradient(-151deg, #9be8a7 0%, #b4ec51 100%);
+  box-shadow: 1px 0 18px 0 #2ea841;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 100rpx;
+  padding-left: 65rpx;
+  padding-right: 65rpx;
+}
+
+.goal-swiper{
+  width: 100%;
+  height: 1020rpx;
+}
+
+.goal-btn{
+background: #42BD55;
+border-radius: 10px;
+height: 86rpx;
+width: 400rpx;
+margin-top: 80rpx;
+color: white;
+border: 0;
+}
+
+.goal-btn-off{
+background: #77B881;
+border-radius: 10px;
+height: 86rpx;
+width: 400rpx;
+margin-top: 80rpx;
+color: white;
+border: 0;
+}
+
+.goal-img{
+  width: 110rpx;
+  height: 110rpx;
+  margin-top: 75rpx;
+  margin-bottom: 115rpx;
+}
+
+.goal-slide{
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 999;
+  position:absolute;
+  top: 290rpx;
+}
+
+.gaol-bar-on{
+  height: 10rpx;
+  position:absolute;
+  border-radius: 40px;
+  background: #42BD55;
+  z-index: 998;
+}
+
+.gaol-bar-nor{
+  width: 420rpx;
+  height: 10rpx;
+  background: #F3F9EF;
+  border-radius: 40px;
+  position:absolute;
+  z-index: 997;
+}
+
+.goal-txt{
+font-size: 28rpx;
+color: #F3F9EF;
+float: right;
+position:absolute;
+left: 565rpx;
+margin-top: 45rpx;
+}
+
+.goal-words{
+font-size: 28rpx;
+color: #698C16;
+text-align: left;
+}
+
+.goal-txt1{
+  margin-top: 130rpx;
+}
+
+.goal-txt2{
+  margin-top: 25rpx;
+}
+
+.goal-txt3{
+  margin-top: 100rpx;
+font-size: 28rpx;
+color: #42BD55;
+text-align: center;
+}

@@ -1,0 +1,32 @@
+
+<view class="classname">
+<p class="cash-title">我的余额</p>
+  <view class="cash-num">{{cash}}<p style="font-size:20rpx;">  分钟</p></view>
+  <view bindtap="refund" class="cash-deposit">我的押金</view>
+  <image src="../../src/imgs/cash-bg.png" class="cash-topcard">
+</image>
+</view>
+
+
+<text class="cash-bg-title">充值金额</text>
+
+<view class="cash-card">
+  <block wx:for="{{txtArray}}" wx:key="">
+    <view id="{{item.id}}      
+     class=" {{item.changeColor? 'selected': 'normal'}} " 
+     bindtap="changeColor"
+     >
+     <view>{{item.txt1}}</view>
+     
+     <view class=" {{item.changeColor? 'selected-txt2': 'normal-txt2'}} ">{{item.txt2}}</view>
+     </view>
+  </block>
+  <view class="cash-money-rule">每分钟按0.2元计费</view>
+</view>
+
+<button class="cash-submit" type="primary" bindtap="charge">充值 {{money}} 元</button>
+<view class="cash-words">
+  <text class="cash-word">点击充值，即代表已阅读并同意</text>
+  <text class="cash-cons" bindtap="openContract">《充值协议》</text>
+</view>
+

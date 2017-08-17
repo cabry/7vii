@@ -1,0 +1,22 @@
+<view wx:if="{{state}}==0" class="classname">
+  <view class="pic-view">
+    <image src="https://striker.teambition.net/thumbnail/110u93629738b3f370cf06931e59a0f023b7/w/400/h/363" class="deposit-pic"></image>
+  </view>
+
+  <view class="deposit-bg2">
+  <image src="https://striker.teambition.net/thumbnail/110ue449b5a5726bcd1ae1f02766309b52c8/w/600/h/99" class="tempPic"></image>
+
+  <!--
+  <view class="classname">
+    <view class="classname">
+    <text class="deposit-words-big">押金 <text class="deposit-words-price">99 </text><text class="deposit-words-price-on"> 7</text> 元</text>
+  </view>
+    <image src="https://striker.teambition.net/thumbnail/110uf1c657f95b5eca44321ca7e12873569b/w/200/h/45" class="tag"></image>
+  </view>
+  -->
+  
+    <text class="deposit-words-small">确保安全健身，需要缴纳押金，押金随时可退</text>
+  </view>
+  <button class="deposit-btn" type="primary" bindtap="charge">缴纳押金</button>
+
+</view>

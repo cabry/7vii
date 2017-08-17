@@ -1,0 +1,84 @@
+.deposit-bg1{
+  width: 100%;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  background-color: #42BD55;
+  text-align: center;
+}
+
+.deposit-pace{
+  width: 413rpx;
+  height: 106rpx;
+}
+
+.deposit-ic{
+  width: 38rpx;
+  height: 42rpx;
+  float: left;
+  margin-right: 25rpx;
+}
+
+
+
+.deposit-bg2{
+  background-color: white;
+  padding-top: 55rpx;
+  padding-bottom: 55rpx;
+  padding-left: 25rpx;
+  min-height: 100rpx;
+  margin-bottom: 425rpx;
+  margin-top: 25rpx;
+
+}
+
+.deposit-btn{
+  margin: 25rpx;
+}
+
+
+.deposit-words-big{
+  font-size: 32rpx;
+  float: left;
+  width: 80%;
+  margin-bottom: 25rpx;
+  color: #42BD55;
+}
+
+.deposit-words-small{
+  font-size: 28rpx;
+  color: #ACE8B6;
+  float: left;
+}
+
+.deposit-words-price{
+  font-size: 32rpx;
+  color: #D8D8D8;
+  text-decoration: line-through;
+}
+
+.deposit-words-price-on{
+  font-size: 48rpx;
+  color: #EABE56;
+}
+
+.deposit-pic{
+  width: 310rpx;
+  height: 281rpx;
+}
+
+.pic-view{
+  margin: 25rpx;
+  text-align: center;
+}
+
+.tag{
+  width: 99px;
+  height: 22px;
+  float: left;
+}
+
+.tempPic{
+  width: 200px;
+  height: 33px;
+  margin-bottom: 25rpx;
+}

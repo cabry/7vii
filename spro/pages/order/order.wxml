@@ -1,0 +1,29 @@
+<view class="order-card">
+  <view class="order-list">
+    <text class="order-title">时长:</text>
+    <text class="order-value">{{sportsInfo.times}} 分钟</text>
+  </view>
+</view>
+<view wx:if="{{attention}}" class="order-attention">不足30分钟，按照30分钟计费</view>
+<view class="order-card">
+  <view class="order-list">
+    <text class="order-title">账户余额:</text>
+    <text class="order-value">{{sportsInfo.balance}} 分钟</text>
+  </view>
+  <view class="order-list" bindtap="navigate2voucher">
+    <text class="order-title">代金券:</text>
+    <text wx:if="{{voucherId === 0}}" class="order-value">{{sportsInfo.availableCount}} 张可用</text>
+    <text wx:if="{{voucherId > 0}}" class="order-value order-voucher-used">- {{couponPrice}} 分钟</text>
+  </view>
+  <view wx:if="{{!enough}}" class="order-list">
+    <text class="order-title">单价(分钟):</text>
+    <text class="order-value">{{sportsInfo.unitPrice}} 元</text>
+  </view>
+  <view wx:if="{{!enough}}" class="order-list">
+    <text class="order-title">还需支付:</text>
+    <text class="order-value">{{sportsInfo.last}} 元</text>
+  </view>
+</view>
+
+<view wx:if="{{!enough}}" class="order-bar" bindtap="order" >支付 {{sportsInfo.last}} 元</view>
+<view wx:if="{{enough}}" class="order-bar" bindtap="order" >确认订单</view>

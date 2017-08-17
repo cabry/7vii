@@ -1,0 +1,27 @@
+<!--goal.wxml-->
+<view class="goal-bg">
+  <swiper class="goal-swiper" indicator-dots="true" indicator-color="#E7FFEB" indicator-active-color="#42BD55">
+    <block wx:for="{{goalData}}">
+      <swiper-item>
+        <view class="goal-card">
+          <image class="goal-img" src="{{item.img}}"></image>
+          <image class="goal-slide" src="../../src/imgs/g-slide.png" style="left:{{item.slide}}"></image>
+          <view class="gaol-bar-on" style="width:{{item.width}}"></view>
+          <view class="gaol-bar-nor"></view>
+          <view class="goal-txt">{{item.goal}}</view>
+          <view class="goal-txt1 goal-words">{{item.txt1}}</view>
+          <view wx:if="{{item.satisfaction}}" class="goal-txt2 goal-words">{{item.txt2}}</view>
+          <view wx:if="{{!item.satisfaction}}" class="goal-txt2 goal-words">距离下一个成就还需要 <text style="color:#F56600">{{item.distance}}</text> 分钟</view>
+          <view class="goal-txt3">{{item.txt3}}</view>
+        </view>
+
+        <view wx:if="{{item.satisfaction}}">
+          <button  wx:if="{{item.exchange}}" class="goal-btn-off" >已领取</button>
+          <button  id="{{item.id}}" wx:if="{{!item.exchange}}" class="goal-btn" bindtap="receive">领取奖励</button>
+        </view>
+
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>

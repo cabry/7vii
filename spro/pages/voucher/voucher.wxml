@@ -1,0 +1,91 @@
+<image src="{{bannerUrl}}" class="voucher-banner"></image>
+
+
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">可使用({{num[0]}})</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">不可用({{num[1]}})</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{num[currentTab]*200+210 }}rpx;min-height: 800rpx;" bindchange="bindChange">
+  <!-- 可使用 -->
+  <swiper-item>
+    <view class="voucher-main" wx:if="{{!empty1}}">
+      <block wx:for="{{availableInfos}}" wx:key="">
+        <view class="voucher-card" id="{{item.id}}">
+          <view class="voucher-num">{{item.couponPrice}}
+            <p style="font-size:24rpx;"> 分钟</p>
+          </view>
+          <view class="voucher-words">
+            <text class=" voucher-title {">{{item.couponName}} </text>
+            <text class="voucher-info ">{{item.comment}}</text>
+            <text class="voucher-time">{{item.time}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view wx:if="{{empty1}}" class="empty">
+      <image src="https://striker.teambition.net/thumbnail/110ua7f2a63e21da54f90396c83682f794c1/w/600/h/630" class="voucher-empty-img"></image>
+      <view class="voucher-empty-txt">你还没有代金券哦，快邀请更多的小伙伴吧</view>
+    </view>
+  </swiper-item>
+
+
+
+  <!--不可用 -->
+  <swiper-item>
+    <view class="voucher-main" wx:if="{{!empty2}}">
+      <block wx:if="{{item.state==1}}" wx:for="{{unavailableInfos}}" wx:key="">
+        <view class="voucher-card voucher-used" bindtap="chosse" id="{{item.id}}">
+          <view class="voucher-num voucher-used">{{item.couponPrice}}
+            <p style="font-size:24rpx;"> 分钟</p>
+          </view>
+          <view class="voucher-words voucher-used">
+            <text class=" voucher-title {">{{item.couponName}} (已使用)</text>
+
+
+            <text class="voucher-info voucher-used">{{item.comment}}</text>
+            <text class="voucher-time voucher-used">{{item.time}}</text>
+          </view>
+
+        </view>
+      </block>
+
+      <block wx:if="{{item.state==2}}" wx:for="{{unavailableInfos}}" wx:key="">
+        <view class="voucher-card voucher-expire" bindtap="chosse" id="{{item.id}}">
+          <view class="voucher-num voucher-expire">{{item.couponPrice}}
+            <p style="font-size:24rpx;"> 分钟</p>
+          </view>
+          <view class="voucher-words voucher-expire">
+            <text class=" voucher-title voucher-expire">{{item.couponName}} (已过期)</text>
+            <text class="voucher-info voucher-expire">{{item.comment}}</text>
+            <text class="voucher-time voucher-expire">{{item.time}}</text>
+          </view>
+
+        </view>
+      </block>
+    </view>
+
+    <view wx:if="{{empty2}}" class="empty">
+      <image src="https://striker.teambition.net/thumbnail/110ua7f2a63e21da54f90396c83682f794c1/w/600/h/630" class="voucher-empty-img"></image>
+      <view class="voucher-empty-txt">你还没有代金券哦，快邀请更多的小伙伴吧</view>
+    </view>
+  </swiper-item>
+
+</swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="voucher-bar" bindtap="addVoucher">
+  添加代金券
+</view>

@@ -1,0 +1,53 @@
+.door-bg{
+  width:450rpx;
+  padding: 45rpx;
+  background-color: white;
+  margin-left: 105rpx;
+  margin-top: 30%;
+  text-align: center;
+}
+
+.door-logo{
+  width: 120rpx;
+  height: 107rpx;
+  margin-top: 25rpx;
+}
+
+
+.door-word{
+  font-size: 32rpx;
+  text-align: center;
+  margin: 32rpx;
+}
+
+.door-question{
+  margin-top: 95rpx;
+  font-size: 24rpx;
+  color: #9B9B9B;
+  margin-bottom: 25rpx;
+}
+
+.door-time{
+  font-size: 32rpx;
+  margin-bottom: 25rpx;
+  color: #42BD55;
+}
+
+.night{
+  text-align: center;
+  color: #9B9B9B;
+  font-size: 28rpx;
+  margin-top: 75rpx;
+}
+
+.index-how{
+  position: fixed;
+  bottom: 0;
+  background-color: #42BD55;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  height: 62rpx;
+  padding-top: 30rpx;
+  width: 100%;
+}

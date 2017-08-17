@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gym/gym",
+    "pages/me/me",
+    "pages/door/door",
+    "pages/order/order",
+    "pages/train/train",
+    "pages/cash/cash",
+    "pages/result/result",
+    "pages/voucher/voucher",
+    "pages/rank/rank",
+    "pages/deposit/deposit",
+    "pages/userInfo/userInfo",
+    "pages/chooseVoucher/chooseVoucher",
+    "pages/addVoucher/addVoucher",
+    "pages/help/help",
+    "pages/helpDetail/helpDetail",
+    "pages/banner/banner",
+    "pages/goal/goal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#42BD55",
+    "navigationBarTitleText": "7Vii 健身便利店",
+    "navigationBarTextStyle": "white"
+  }
+}

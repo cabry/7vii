@@ -1,0 +1,39 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+
+<view class="classname">
+  <image src="{{storeInfo.coverPic}}" class="store-cover"></image>
+  <view class="store-card">
+    <view class="store-firstline">
+      <image src="../../src/imgs/ic-info-gym.png" class="store-ic ic-gym"></image>
+      <p class="store-title">健身价格</p>
+    </view>
+    <view class="store-info">¥ {{storeInfo.unitPrice}}元/分钟（24h自助，不足30分钟按30分钟计算）</view>
+  </view>
+
+  <view class="store-card">
+    <view class="store-firstline">
+      <image src="../../src/imgs/ic-info-place.png" class="store-ic ic-place"></image>
+      <p class="store-title">地址</p>
+    </view>
+   <view class="store-info">
+      <template is="wxParse" data="{{wxParseData:article2.nodes}}" />
+    </view>
+  </view>
+
+  <view class="store-card">
+    <view class="store-firstline">
+      <image src="../../src/imgs/ic-info-attention.png" class="store-ic ic-attention"></image>
+      <p class="store-title">注意事项</p>
+    </view>
+    <view class="store-info">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+
+</view>
+<view class="order-bar" bindtap="order">
+  开始健身
+</view>
+
+<view style="height:100rpx;"></view>

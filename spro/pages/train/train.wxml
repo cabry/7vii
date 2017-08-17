@@ -1,0 +1,16 @@
+<view wx:if="{{!empty}}">
+  <block wx:for="{{trainData}}" wx:key="">
+    <navigator url="{{item.url}}" class="train-card" bindtap="trainView" id="{{item.sportsId}}">
+      <image src="{{item.coverPic}} " class="train-cover "></image>
+      <view class="train-title">{{item.storeName}}</view>
+      <view class="train-time">{{item.time}}</view>
+    </navigator>
+  </block>
+</view>
+
+
+<view wx:if="{{empty}}" class="empty">
+    <image src="https://striker.teambition.net/thumbnail/110u8b6f7468864e7b1eb071cd8804e786a3/w/800/h/611" class="train-empty-img"></image>
+    <view class="train-empty-txt">你还没有健身记录哦，快来锻炼起来吧</view>
+</view>
+

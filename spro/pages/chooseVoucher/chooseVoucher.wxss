@@ -1,0 +1,98 @@
+.voucher-bar {
+  background-color: #42bd55;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  padding-top: 38rpx;
+  padding-bottom: 38rpx;
+}
+
+.voucher-banner {
+  display: block;
+  width: 750rpx;
+  height: 208rpx;
+}
+
+.voucher-card{
+  background-color: white;
+  margin: 25rpx;
+  padding: 25rpx;
+  width: 650rpx;
+  border-radius: 5rpx;
+  position: relative;
+  display: -webkit-box;
+}
+
+.voucher-num{
+  font-size: 48rpx;
+  color: #D0021B;
+  line-height: 120rpx;
+  margin-right: 32rpx;
+  border-right-width: 2rpx;
+  border-right-style: dashed;
+  border-right-color: #CCC;
+  padding-right: 25rpx;
+}
+
+.voucher-words{
+
+}
+.voucher-pic{
+  -webkit-box-flex: 2;
+  -moz-box-orient: 2;
+}
+
+.voucher-title{
+  font-size: 32rpx;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 100%;
+  margin-bottom: 15rpx;
+}
+
+.voucher-info{
+  font-size: 28rpx;
+  color: #777;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 100%;
+  margin-bottom: 15rpx;
+}
+
+.voucher-time{
+  font-size: 28rpx;
+  color: #777;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  width: 100%;
+}
+
+
+.voucher-used{
+  color: #9B9B9B;
+}
+
+.voucher-expire{
+  color: #9B9B9B;
+}
+
+.voucher-unuse{
+  font-size: 28rpx;
+}
+
+
+
+
+

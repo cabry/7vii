@@ -1,0 +1,37 @@
+<view class="userInfo-span">
+  <view class="userInfo-list">
+    <text class="title">头像</text>
+    <image src="src" class="avator"></image>
+  </view>
+
+  <view class="userInfo-list">
+    <text class="title">昵称</text>
+    <text class="data">{{userData.uesrName}}</text>
+  </view>
+
+  <view class="userInfo-list">
+    <text class="title">性别</text>
+    <text class="data">{{userData.userSex}}</text>
+  </view>
+</view>
+
+<view class="userInfo-span">
+  <view class="userInfo-list">
+    <text class="title">手机号</text>
+    <text class="data">{{userData.phone}}</text>
+  </view>
+</view>
+
+<view class="userInfo-span">
+  <view class="userInfo-list">
+    <text class="title">匿名</text>
+    
+  </view>
+</view>
+
+<view class="classname">
+  <text>您已同意并接受</text>
+  <navigator url="url">《Vii健身用户协议》</navigator>
+  
+</view>
+

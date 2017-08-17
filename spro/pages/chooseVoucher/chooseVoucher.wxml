@@ -1,0 +1,14 @@
+<block wx:if="{{item.state==0}}" wx:for="{{vouchers}}" wx:key="">
+  <view class="voucher-card" bindtap="chosse" id="{{item.id}}">
+    <view class="voucher-num">{{item.couponPrice}}<p style="font-size:24rpx;"> 分钟</p>
+    </view>
+    <view class="voucher-words">
+      <text  class=" voucher-title {">{{item.couponName}} </text>
+
+
+      <text class="voucher-info ">{{item.comment}}</text>
+      <text class="voucher-time">{{item.time}}</text>
+    </view>
+
+  </view>
+</block>

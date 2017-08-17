@@ -1,0 +1,6 @@
+.vouchernew-input{
+  background-color: white;
+  margin-top: 45rpx;
+  padding: 25rpx;
+  font-size: 32rpx;
+}

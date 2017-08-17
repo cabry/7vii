@@ -1,0 +1,12 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="helpDetail-top">可以扫描器材上的二维码快速查看帮助</view>
+
+<view wx:if="{{state}}" class="movie">
+  <video  src="{{videoUrl}}"   controls ></video>
+</view>
+ 
+
+<view class="template">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

@@ -1,0 +1,58 @@
+<!--index.wxml-->
+
+
+<view wx:if="{{isSpotrs == false}}">
+  <swiper class="swiper-me" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{bannerData}}">
+      <swiper-item>
+        <navigator url="{{item.bannerUrl}}">
+          <image src="{{item.picUrl}}" class="slide-image" />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <navigator url="{{item.url}}" class="gym-card" id="{{item.storeId}}" wx:for="{{gymInfo}}">
+    <view class="gym-card-title">{{item.storeName}}</view>
+    <image src="{{item.coverPic}}" class="gym-card-cover"></image>
+    <view class="gym-card-position">{{item.intro}}</view>
+  </navigator>
+
+  <view class="index-footer">－ 更多CVS敬请期待 －</view>
+
+<!-- <button bindtap="scan">扫码开始健身</button>--> 
+  <nav class="tab-bar">
+    <a class="tab-on">
+      <image class="tab-icon" src="../../src/imgs/tab-gym-on.png"></image>
+      <span class="tab-label-on">健身</span>
+    </a>
+    <a class="tab-off" bindtap="tabchoose">
+      <image class="tab-icon" src="../../src/imgs/tab-me-nor.png"></image>
+      <span class="tab-label-off">我的</span>
+    </a>
+  </nav>
+
+</view>
+
+
+
+
+
+<view wx:if="{{isSpotrs == true}}">
+
+  <view class="door-bg">
+    <image src="../../src/imgs/logo.png" class="door-logo"></image>
+    <view class="door-word">{{word1}}</view>
+    <view class="door-word">{{word2}}</view>
+    <!--<view class="door-time">{{time}}</view>-->
+    <view class="start-time">入场时间:<text style="color:#42BD55">{{startTime}}</text></view>
+    <view class="door-stop">
+      <button type="primary" bindtap="stop">{{btn}}</button>
+    </view>
+  </view>
+
+  <view wx:if="{{isNight}}" class="night">已经到夜里了哦，请在健身时，尽量不要打扰到周围的住户</view>
+  <view wx:if="{{isMorning}}" class="night">现在还是清晨呢，请在健身时，尽量不要打扰到周围的住户</view>
+  <view bindtap="go2how" class="index-how">不知道练什么，那就来试试<text style="color:#F8E81C">“练什么”</text>吧～</view>
+
+</view>
