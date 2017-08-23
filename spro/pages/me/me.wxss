@@ -110,6 +110,7 @@
 .me-list {
   margin-top: 45rpx;
   width: 750rpx;
+  height: 775rpx;
 }
 
 .me-box-ic {

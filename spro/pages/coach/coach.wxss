@@ -1,0 +1,137 @@
+.cash-topcard {
+  height: 200rpx;
+  width: 750rpx;
+  margin-bottom: 15rpx;
+  z-index: 1;
+  }
+
+.cash-title {
+  color: white;
+  font-size: 24rpx;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15rpx;
+  z-index: 999;
+  position: absolute;
+  top: 35rpx;
+
+}
+
+.cash-num {
+  color: white;
+  font-size: 76rpx;
+  float: left;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  top: 80rpx;
+
+}
+
+.cash-deposit {
+  color: white;
+  font-size: 24rpx;
+  text-align: left;
+  left: 0px;
+  margin-left: 45rpx;
+  z-index: 999;
+  position: absolute;
+  top: 140rpx;
+
+}
+
+.cash-bg-title {
+  font-size: 28rpx;
+  color: #9b9b9b;
+  margin: 25rpx;
+}
+
+.cash-card {
+  text-align: center;
+  padding: 25rpx 0rpx 25rpx 0rpx;
+  background-color: white;
+  float: left;
+  margin-bottom: 45rpx;
+  margin-top: 15rpx;
+}
+
+.normal {
+  padding: 25rpx 25rpx 25rpx 25rpx;
+  background-color: white;
+  border: 1px solid #42bd55;
+  text-align: center;
+  float: left;
+  width: 260rpx;
+  margin: 25rpx;
+  font-size: 32rpx;
+  min-height: 100rpx;
+}
+
+.selected {
+  padding: 25rpx 25rpx 25rpx 25rpx;
+  background-color: #42bd55;
+  border: 1px solid #42bd55;
+  text-align: center;
+  float: left;
+  width: 260rpx;
+  margin: 25rpx;
+  font-size: 32rpx;
+  color: white;
+  min-height: 100rpx;
+}
+
+.normal-txt2{
+  color: #42bd55;
+  margin-top: 15rpx;
+}
+
+.selected-txt2{
+  color: #F8E81C;
+  margin-top: 15rpx;
+}
+
+
+
+.cash-word{
+  color: #9B9B9B;
+  font-size: 24rpx;
+}
+
+.cash-words{
+  width: 750rpx;
+  text-align: center;
+}
+
+.cash-cons{
+  color: #4A90E2;
+  font-size: 24rpx;
+}
+
+.cash-submit{
+  margin-bottom: 25rpx;
+  width: 660rpx;
+  background: #42BD55;
+  color: white;
+}
+
+.cash-money-rule{
+  font-size: 28rpx;
+  color: #9B9B9B;
+  text-align: left;
+  float: left;
+  margin-left: 25rpx;
+}
+
+.info{
+  line-height: 1.8;
+  margin-bottom: 60rpx;
+}
+
+.unit{
+  text-align: center;
+  font-size: 28rpx;
+  color: #9B9B9B;
+  width: 750rpx;
+}

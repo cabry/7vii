@@ -17,7 +17,8 @@
     "pages/help/help",
     "pages/helpDetail/helpDetail",
     "pages/banner/banner",
-    "pages/goal/goal"
+    "pages/goal/goal",
+    "pages/coach/coach"
   ],
   "window": {
     "backgroundTextStyle": "light",

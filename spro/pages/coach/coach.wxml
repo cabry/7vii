@@ -1,0 +1,23 @@
+
+<text class="cash-bg-title">购买课程</text>
+
+<view class="cash-card">
+  <block wx:for="{{txtArray}}" wx:key="">
+    <view id="{{item.id}}      
+     class=" {{item.changeColor? 'selected': 'normal'}} " 
+     bindtap="changeColor"
+     >
+     <view>{{item.txt1}}</view>
+     
+     <view class="{{item.changeColor? 'selected-txt2': 'normal-txt2'}} ">{{item.txt2}}</view>
+     </view>
+  </block>
+  <view class="cash-money-rule">购买成功后，请添加客服微信，会有工作人员跟您联系</view>
+</view>
+
+<text class="cash-money-rule info">{{coachInfo}}</text>
+
+<button class="cash-submit" type="primary" bindtap="charge">支付 {{money}} 元</button>
+<view style="text-align: center;">
+<text class="unit" wx:if="{{tryMe}}">单节课程低至 <text style="color:#42BD55">{{unitPrice}}</text> 元</text>
+</view>

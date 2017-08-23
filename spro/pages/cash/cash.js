@@ -167,6 +167,11 @@ Page({
                 },
                 fail: function (err) {
                   wx.hideLoading();
+                  wx.showModal({
+                    title: '提示',
+                    content: '遇到了点问题，请稍后重试',
+                    showCancel: false
+                  })
                 }
               })
             },

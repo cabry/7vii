@@ -1,4 +1,5 @@
 <!--logs.wxml-->
+
 <view class="name-card">
   <image class="userinfo-avatar" src="{{userData.userIcon}}" background-size="cover"></image>
 
@@ -22,7 +23,7 @@
   </view>
 </view>
 
-<view class="me-list" >
+<view class="me-list">
   <navigator class="me-box" url="../train/train">
     <image src="../../src/imgs/m-train.png" class="me-box-ic"></image>
     <view class="me-box-title">我的健身</view>
@@ -55,7 +56,15 @@
     <image src="../../src/imgs/m-card.png" class="me-box-ic"></image>
     <view class="me-box-title">练什么</view>
   </view>
+
+  <view class="me-box" bindtap="coach">
+    <image src="../../src/imgs/m-coach.png" class="me-box-ic"></image>
+    <view class="me-box-title">私教课程</view>
+  </view>
+
+
 </view>
+
 
 <nav class="tab-bar">
   <a class="tab-on" bindtap="tabchoose">
